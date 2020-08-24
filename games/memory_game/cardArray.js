@@ -1,4 +1,4 @@
-export default const cardArray = [
+export default const cards= [
   {
     name: "discover",
     emoji: "󠀠󠀠❓",
