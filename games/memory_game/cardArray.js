@@ -1,4 +1,4 @@
-export default const cards= [
+const cards = [
   {
     name: "discover",
     emoji: "󠀠󠀠❓",
@@ -40,3 +40,5 @@ export default const cards= [
     emoji: "🇪🇸",
   },
 ];
+
+export default { cards };
