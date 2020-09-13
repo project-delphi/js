@@ -1,20 +1,21 @@
 import cards from "./cardArray.js";
 const Game = (grid, score) => {
   const state = {
-    cardsChosen: [],
-    cardsMatched: [],
+    cellsChosen: [],
+    cellsMatched: [],
+    cellIds,
   };
 
   const showCard = (e) => {
     cell.setAttribute();
   };
 
-  const MatchingPairs = (cardsChosen) => {
-    cardsChosen.filter((card) => (card = carsChosen[0]));
+  const matchingPairs = (cardsChosen) => {
+    cardsChosen.filter((card) => (card = cardsChosen[0]));
   };
 
   const sideEffects = ({ cardsChosen, cardsMatched }, score) => {
-    const m = MatchingPairs(cardsChosen);
+    const m = matchingPairs(cardsChosen);
     if (m.length == 0) {
       alert("Sorry, try again!");
     } else {
@@ -36,7 +37,7 @@ const Game = (grid, score) => {
     const cardSelected = cards.filter();
     cardChosen.push(cardSelected);
     if (cardsChosen.length == 2) {
-      state.cardsMatched = [...cardsMatched, ...MatchingPairs(cardsChosen)];
+      state.cardsMatched = [...cardsMatched, ...matchingPairs(cardsChosen)];
       sideEffects(state, score);
       state.cardsChosen = [];
     }
