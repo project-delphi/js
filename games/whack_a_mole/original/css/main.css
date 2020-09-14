@@ -1,3 +1,8 @@
+body {
+  display: flex;
+  justify-content: space-around;
+}
+
 .square {
   width: 200px;
   height: 200px;
@@ -15,6 +20,21 @@
 }
 
 .mole {
-  background-image: url();
+  background-image: url("./../mole.jpg");
   background-size: cover;
+}
+
+#info {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#score,
+#countdown {
+  font-size: xx-large;
+  color: grey;
+  font-weight: 800;
 }
